@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+
+/* Ao clicar nos links a rolagem entre um conteúdo e outro será mais suavizada */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Ajuste global de margem, espaçamento, fonte e tamanho da tela */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+main {
+    padding-top: 100px;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+
+/* O overflow-x serve para impedir a rolagem horizontal, fazendo que o haja a quebra caso o conteúdo seja maior que a tela */
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+/* Espaçamento extra no topo das seções para compensar a navbar fixa */
+section {
+    margin-bottom: 80px;
+    scroll-margin-top: 100px;
+}
+
+/* Estilização da navbar fixa */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 80px; /* Ajuste o espaço entre os itens */
+    padding: 0;
+    margin: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px;
+    display: block;
+    transition: background-color 0.3s, border-radius 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Centralizar e estilizar o nome */
+.nome {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.nome h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.nome h3 {
+    font-size: 24px;
+    color: #666;
+}
+
+/* Estilização da foto em formato de círculo */
+.foto {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.foto img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.foto img:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte ao passar o mouse */
+    transform: translateY(-5px); /* Levanta a imagem ao passar o mouse */
+}
+
+/* Estilização geral de textos */
+h1, h2, h3, h4, p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+h1 { font-size: 36px; }
+h2 { font-size: 30px; }
+h3 { font-size: 24px; color: #666; }
+h4 { font-size: 20px; color: #333; }
+p { font-size: 16px; color: #666; }
+
+/* Estilização dos cards de portfólio */
+.telas {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.cartao {
+    text-align: center;
+    width: 30%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cartao:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+    transform: translateY(-5px);
+}
+
+.cartao img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cartao h4 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Estilização do formulário de contato */
+form {
+    margin: 30px 0;
+}
+
+.grupo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grupo label {
+    margin: 10px 0;
+}
+
+.grupo input[type="text"],
+.grupo input[type="email"],
+.grupo textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.grupo textarea {
+    resize: none;
+}
+
+.botao {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: #555;
+}
+

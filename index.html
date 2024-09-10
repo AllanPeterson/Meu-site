@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allan Peterson</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Barra de navegação fixa na página -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Sobre Mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Nome e foto -->
+        <div class="nome">
+            <h1>Allan Peterson de Sá</h1>
+            <h3>Front-end developer</h3>
+        </div>
+
+        <div class="foto">
+            <a href="https://www.linkedin.com/in/allan-peterson-de-s%C3%A1-/" target="_blank"><img src="./img/Allan.jpg" alt="Uma foto para mostrar quem sou"></a>
+        </div>
+
+        <!-- Abaixo todas informações sobre mim -->
+        <section id="sobre-mim">
+            <h1>Sobre Mim</h1>
+            <p class="texto">Olá sou o Allan Peterson tenho 23 anos e moro na cidade de Poços de Caldas, desde muito novo sempre gostei do mundo dos videogames, acredito que por conta de tudo isso tive sempre um apreço maior para a área de desenvolvimento. Após o passar do tempo fui continuando com essa mentalidade e os jogos se tornaram uma forma de relaxar e também aprender, já que foi o que ajudou demais no meu desenvolvimento com o Inglês, também comecei a praticar mais exercícios físicos e hoje uma das minhas válvulas de escape é ir para academia.</p>
+            <p class="texto"> Depois que consegui comprar minha moto me senti livre para seguir para qualquer lugar, e tenho como hobbie viajar de moto para cidades próximas, relaxar um pouco e apreciar a natureza que beira as estradas mineiras.</p>
+        </section>
+
+        <!-- Abaixo informações sobre minhas formações academicas e conhecimentos -->
+        <section id="formacao">
+            <h1>Formação</h1>
+            <p class="texto">Atualmente estou graduando em Análise e Desenvolvimento de Sistemas pela Uninter.
+                Sou técnico em desenvolvimento de sistemas pelo IF Sul de Minas.
+                E possuo um bom conhecimento de Inglês, devido a um ano de Cambly consigo me comunicar sem problemas.
+            </p>
+        </section>
+
+        <!-- Seção responsável pelos meus projetos e realizações -->
+        <section id="portfolio">
+            <h1>Portfólio</h1>
+            <p>Apresente seus trabalhos, projetos e realizações neste espaço.</p>
+            <div class="telas">
+                <div class="cartao">
+                    <h4>Tela de configurações ATRI</h4>
+                    <p>Faço parte de um projeto sem fins lucrativos, e por enquanto auxílio na criação do blog, essa tela de configurações é uma das que fiz dentre as outras. Ainda não finalizamos o blog como um todo, por enquanto temos somente o front-end.</p>
+                    <a href="https://github.com/institute-atri/blog-frontend" target="_blank"><img src="./img/atriSettings.png" alt="Imagem da tela de configurações criadas para a ATRI"></a>
+                </div>
+                <div class="cartao">
+                    <h4>Site Bikcraft</h4>
+                    <p>Enquanto estava fazendo o curso da Origamid, desenvolvi esse projeto durante as aulas de HTML e CSS, onde consegui aprender bastante enquanto buscava semelhança com o template do curso.</p>
+                    <a href="https://allanpeterson.github.io/origamid_bikcraft/" target="_blank"><img src="./img/bikcraft.png" alt="Imagem do site bikcraft criado com o curso da Origamid"></a>
+                </div>
+                <div class="cartao">
+                    <h4>Pokedex</h4>
+                    <p>Embora seja algo que muitos fazem por aí, essa pokedex foi uma das primeiras interações que tive com HTML e CSS, criei junto a uma imersão que participei com o pessoal do DevEmDobro.</p>
+                    <a href="https://allanpeterson.github.io/listagem-pokemon/#" target="_blank"><img src="./img/pokedex.png" alt="Imagem de uma pokedex criada com o curso DevEmDobro"></a>
+                </div>
+                
+            </div>
+
+        </section>
+
+        <!-- Formulário para envio de email e contato -->
+        <section id="contato">
+            <h1>Contato</h1>
+            <p>Acha que sou uma pessoa que posso agregar em algo ou gostaria de me contatar para um assunto específico? Mande uma mensagem abaixo, gostaria de conversar:</p>
+            <form>
+                <fieldset class="grupo">
+                    <label for="nome"><strong>Nome:</strong></label>
+                    <input type="text" name="nome" id="nome" placeholder="Insira seu nome" required>
+
+                    <label for="email"><strong>Email:</strong></label>
+                    <input type="email" name="email" id="email" placeholder="Insira seu email" required>
+
+                    <label for="observacao"><strong>Deixe sua mensagem:</strong></label>
+                    <textarea name="observacao" id="observacao" rows="5" placeholder="Deixe aqui sua mensagem"></textarea> 
+
+                    <input class="botao" type="submit" value="Enviar"/>   
+                    <input  class="botao" type="reset" value="Limpar">
+                    
+                </fieldset> 
+                
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © 2024 Allan Peterson de Sá. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
